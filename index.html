@@ -17,7 +17,7 @@
             <div class="content">Запишитесь на наш семинар!</div>
             <div class="content">
                 <form class="contact-form-top">
-                    <button class="subscribe-top" type="submit">записаться</button>
+                    <a href="#subscribe"><button class="subscribe-top" type="submit">записаться</button></a>
                 </form>
             </div>
         </div>
@@ -135,7 +135,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="subscribe">
             <div class="container form">
                 <div>
                     <h2>Запишитесь на семинар FastReports уже сейчас!</h2>
@@ -163,7 +163,15 @@
 
         $('.subscribe-top').click(e => {
             e.preventDefault();
-            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
         })
     </script>
 </body>
