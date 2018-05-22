@@ -396,6 +396,7 @@ ul{
 section:nth-child(2):before{
     content: "";
     width: -webkit-fill-available;
+    width: -moz-available;
     height: 1000px;
     position: absolute;
     background: url(../img/background.png) 0px 144px;
