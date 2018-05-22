@@ -139,7 +139,7 @@
             <div class="container form">
                 <div>
                     <h2>Запишитесь на семинар FastReports уже сейчас!</h2>
-                    <form class="contact-form">
+                    <form class="contact-form" action="https://formspree.io/shalpack@gmail.com">
                         <input type="email" required name="Email" placeholder="Email">
                         <input name="fio" required placeholder="ФИО">
                         <button class="subscribe" type="submit">записаться</button>
@@ -164,20 +164,6 @@
         $('.subscribe-top').click(e => {
             e.preventDefault();
             
-        })
-        $('.subscribe').click(e => {
-            e.preventDefault();
-            $.ajax({
-                type: 'POST',
-                url: 'https://formspree.io/shalpack@gmail.com',
-                data: $('.contact-form').serialize(),
-                datatype: 'json',
-                success: () => {
-                    $('.subscribe').html('Вы записаны');
-                    $('.subscribe').prop('disabled', true);
-                    $('.subscribe').toggleClass('no-pointer')
-                }
-            })
         })
     </script>
 </body>
