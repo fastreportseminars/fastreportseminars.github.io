@@ -404,3 +404,7 @@ section:nth-child(2):before{
     z-index: 0;
     opacity: .85;
 }
+
+.container.form div{
+    text-align: center;
+}
