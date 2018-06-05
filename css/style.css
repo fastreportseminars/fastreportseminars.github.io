@@ -408,3 +408,8 @@ section:nth-child(2):before{
 .container.form div{
     text-align: center;
 }
+
+.container.form div span{
+    color: #fff;
+    margin-top: 20px;
+}
