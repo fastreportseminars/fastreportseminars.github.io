@@ -141,7 +141,10 @@ ul{
     border-bottom: 3px solid #e53935;
     width: 175px;
     margin-top: 45px;
-    left: 205px;
+    left: 0px;
+    right: 355px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .less{
